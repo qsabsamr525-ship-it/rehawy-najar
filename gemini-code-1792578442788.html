@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الكورسات التدريبية | سامر قصاب - شوارع حلب</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><span class="gradient-text">شوارع حلب</span> | سامر قصاب</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="tutorials.html">شروحات</a></li>
+        <li><a href="courses.html" class="active">كورسات</a></li>
+        <li><a href="consultations.html">حجز استشارات</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>الكورسات <span class="gradient-text">والبرامج التدريبية</span></h2>
+        <p>دورات متكاملة للانتقال بمهاراتك من الصفر إلى الاحتراف</p>
+      </div>
+
+      <div class="grid-3">
+        <!-- Course Card 1 -->
+        <div class="glass-card">
+          <div class="card-img">[ غلاف كورس احتراف ChatGPT ]</div>
+          <span class="badge">متاح حالياً</span>
+          <h3 style="margin-bottom: 10px;">احتراف الهندسة الأوامر و ChatGPT</h3>
+          <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:15px;">دليل شامل لبناء مساعدين ذكيين وأتمتة كتابة المحتوى والتحليل.</p>
+          <div style="font-weight:700; color:var(--accent-blue); margin-bottom:15px;">مجاني بالكامل</div>
+          <a href="#registerSection" class="btn btn-primary" style="width:100%;">تسجيل الآن</a>
+        </div>
+
+        <!-- Course Card 2 -->
+        <div class="glass-card">
+          <div class="card-img">[ غلاف كورس صناعة المحتوى بالـ AI ]</div>
+          <span class="badge" style="color:#e2e8f0; border-color: #64748b;">قريباً</span>
+          <h3 style="margin-bottom: 10px;">إطلاق قناة يوتيوب كاملة بالذكاء الاصطناعي</h3>
+          <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:15px;">خطوة بخطوة من الفكرة، النص، الصوت، إلى المونتاج وإدارة القناة.</p>
+          <div style="font-weight:700; color:var(--text-muted); margin-bottom:15px;">سيتم فتح باب التسجيل قريباً</div>
+          <button class="btn btn-secondary" style="width:100%; opacity:0.6;" disabled>قريباً</button>
+        </div>
+      </div>
+
+      <!-- Registration Form -->
+      <div id="registerSection" class="glass-card" style="margin-top: 60px; max-width: 600px; margin-left: auto; margin-right: auto;">
+        <h3 style="text-align: center; margin-bottom: 20px;">نموذج التسجيل في الكورسات</h3>
+        <form id="courseForm">
+          <div class="form-group">
+            <label>الاسم الكامل</label>
+            <input type="text" class="form-control" required placeholder="أدخل اسمك الكريم">
+          </div>
+          <div class="form-group">
+            <label>البريد الإلكتروني</label>
+            <input type="email" class="form-control" required placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label>الكورس المطلوب</label>
+            <select class="form-control" required>
+              <option value="">اختر الكورس...</option>
+              <option value="chatgpt">احتراف الهندسة الأوامر و ChatGPT</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">تأكيد الطلب</button>
+          <div id="courseStatus" style="margin-top:15px; text-align:center;"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p class="copyright">جميع الحقوق محفوظة © 2026 - سامر قصاب (شوارع حلب)</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

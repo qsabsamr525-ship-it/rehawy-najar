@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الشروحات والفيديوهات | سامر قصاب - شوارع حلب</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><span class="gradient-text">شوارع حلب</span> | سامر قصاب</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="tutorials.html" class="active">شروحات</a></li>
+        <li><a href="courses.html">كورسات</a></li>
+        <li><a href="consultations.html">حجز استشارات</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <section style="padding-top: 60px;">
+    <div class="container">
+      <div class="section-title">
+        <h2>مكتبة <span class="gradient-text">الشروحات والتطبيقات</span></h2>
+        <p>ابحث عن الشروحات وفلترها بحسب المجال</p>
+      </div>
+
+      <!-- Controls: Search & Category Filter -->
+      <div class="glass-card" style="margin-bottom: 40px;">
+        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+          <input type="text" id="searchInput" class="form-control" placeholder="🔍 ابحث في الشروحات عن عنوان معين..." style="flex: 2; min-width: 250px;">
+          <select id="categoryFilter" class="form-control" style="flex: 1; min-width: 180px;">
+            <option value="ALL">جميع التصنيفات</option>
+            <option value="ChatGPT">ChatGPT</option>
+            <option value="إنشاء الصور">إنشاء الصور</option>
+            <option value="صناعة الفيديو">صناعة الفيديو</option>
+            <option value="الأتمتة والإنتاجية">الأتمتة والإنتاجية</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="grid-3" id="tutorialsGrid">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p class="copyright">جميع الحقوق محفوظة © 2026 - سامر قصاب (شوارع حلب)</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

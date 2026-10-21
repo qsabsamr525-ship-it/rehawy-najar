@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حجز استشارة خاصة | سامر قصاب - شوارع حلب</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><span class="gradient-text">شوارع حلب</span> | سامر قصاب</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="tutorials.html">شروحات</a></li>
+        <li><a href="courses.html">كورسات</a></li>
+        <li><a href="consultations.html" class="active">حجز استشارات</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>احجز <span class="gradient-text">جلسة استشارية خاصة</span></h2>
+        <p>توجيه مباشر لحل مشاكلك التقنية وتطوير قناتك أو مشروعك</p>
+      </div>
+
+      <div class="glass-card" style="max-width: 700px; margin: 0 auto;">
+        <form id="consultationForm">
+          <!-- Anti-spam Honeypot -->
+          <input type="text" name="website_hp" class="honeypot">
+
+          <div class="form-group">
+            <label>الاسم بالكامل *</label>
+            <input type="text" class="form-control" required placeholder="أدخل اسمك">
+          </div>
+
+          <div class="form-group">
+            <label>البريد الإلكتروني *</label>
+            <input type="email" class="form-control" required placeholder="example@mail.com">
+          </div>
+
+          <div class="form-group">
+            <label>رقم الواتساب / الهاتف *</label>
+            <input type="tel" class="form-control" required placeholder="+963...">
+          </div>
+
+          <div class="form-group">
+            <label>نوع الاستشارة *</label>
+            <select class="form-control" required>
+              <option value="">اختر المجال...</option>
+              <option value="ai-tools">اختيار وبناء أدوات الذكاء الاصطناعي</option>
+              <option value="youtube-growth">نمو قناة اليوتيوب وصناعة المحتوى</option>
+              <option value="automation">أتمتة سير العمل للشركات والأفراد</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>تفاصيل الطلب أو الاستفسار *</label>
+            <textarea class="form-control" rows="5" required placeholder="اشرح المشكلة أو الهدف الذي تريد تحقيقه في هذه الجلسة..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">إرسال طلب الاستشارة</button>
+          <div id="consultationStatus" style="margin-top: 15px; text-align: center;"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p class="copyright">جميع الحقوق محفوظة © 2026 - سامر قصاب (شوارع حلب)</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
